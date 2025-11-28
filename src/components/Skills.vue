@@ -1,13 +1,11 @@
-<!-- 
-  Composant Skills - Section compétences
-  Affiche les compétences techniques et les technologies maîtrisées
--->
 <script setup lang="ts">
 
 </script>
 
 <template>
-  <p>Skills</p>
+  <section id="skills" class="min-h-screen flex items-center justify-center py-20">
+    <p>Skills<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+  </section>
 </template>
 
 <style scoped>

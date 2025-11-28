@@ -1,16 +1,13 @@
-<!-- 
-  Composant Contact - Section contact
-  Formulaire de contact et informations de contact
--->
 <script setup lang="ts">
 
 </script>
 
 <template>
-  <p>Contact</p>
+  <section id="contact" class="min-h-screen flex items-center justify-center py-20">
+    <p>Contact<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+  </section>
 </template>
 
 <style scoped>
-/* Styles spécifiques si nécessaire */
 </style>
 

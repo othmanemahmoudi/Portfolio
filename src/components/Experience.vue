@@ -1,13 +1,11 @@
-<!-- 
-  Composant Experience - Section expérience professionnelle
-  Affiche l'historique des emplois et expériences
--->
 <script setup lang="ts">
 
 </script>
 
 <template>
-  <p>Experience</p>
+  <section id="experience" class="min-h-screen flex items-center justify-center py-20">
+    <p>Experience<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+  </section>
 </template>
 
 <style scoped>

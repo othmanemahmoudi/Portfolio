@@ -1,7 +1,3 @@
-<!-- 
-  Layout par défaut - Structure principale de l'application
-  Combine Header et Footer avec un slot pour le contenu
--->
 <script setup lang="ts">
 import Hero from '../components/Hero.vue'
 import About from '../components/About.vue'

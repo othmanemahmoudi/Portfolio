@@ -1,13 +1,9 @@
-<!-- 
-  Composant Navigation - Barre de navigation fixe
-  Navigation sticky avec liens vers les sections et menu mobile
--->
 <script setup lang="ts">
 
 </script>
 
 <template>
-  <p>Navigation</p>
+  <p>Navigation<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 </template>
 
 <style scoped>

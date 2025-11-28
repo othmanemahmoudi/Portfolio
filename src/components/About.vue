@@ -1,13 +1,11 @@
-<!-- 
-  Composant About - Section "À propos"
-  Présente les informations personnelles, la passion et les objectifs
--->
 <script setup lang="ts">
 
 </script>
 
 <template>
-  <p class="text-green-500">À propos de moi</p>
+  <section id="about" class="min-h-screen flex items-center justify-center py-20">
+    <p class="text-green-500">À propos de moi<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+  </section>
 </template>
 
 
