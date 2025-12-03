@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import Switch from '../components/Switch.vue'
 
 const isMenuOpen = ref(false)
 
@@ -24,57 +25,58 @@ const scrollToSection = (sectionId: string) => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-    <nav class="container mx-auto px-4 py-4">
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-sm bg-black">
+    <nav class="container mx-auto px-4 py-4 ">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="#" @click.prevent="scrollToSection('hero')" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
+          <a href="#" @click.prevent="scrollToSection('hero')" class="text-2xl font-bold text-white hover:text-[#CFAF71] transition-colors">
             Portfolio
           </a>
         </div>
+        <Switch />
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
           <a 
             href="#hero" 
             @click.prevent="scrollToSection('hero')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Accueil
           </a>
           <a 
             href="#about" 
             @click.prevent="scrollToSection('about')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             À propos
           </a>
           <a 
             href="#experience" 
             @click.prevent="scrollToSection('experience')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Expérience
           </a>
           <a 
             href="#projects" 
             @click.prevent="scrollToSection('projects')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Projets
           </a>
           <a 
             href="#skills" 
             @click.prevent="scrollToSection('skills')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Compétences
           </a>
           <a 
             href="#contact" 
             @click.prevent="scrollToSection('contact')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Contact
           </a>

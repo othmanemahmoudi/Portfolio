@@ -7,7 +7,7 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <footer class="bg-gray-900 text-white">
+  <footer class="bg-black text-white">
     <div class="container mx-auto px-4 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- About Section -->
