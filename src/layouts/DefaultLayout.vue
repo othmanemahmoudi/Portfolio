@@ -5,6 +5,7 @@ import Experience from '../components/Experience.vue'
 import Skills from '../components/Skills.vue'
 import Projects from '../components/Projects.vue'
 import Contact from '../components/Contact.vue'
+import Certificats from '../components/Certificats.vue'
 </script>
 
 <template>
@@ -24,6 +25,9 @@ import Contact from '../components/Contact.vue'
 
   <!-- Section Projets -->
   <Projects />
+
+  <!-- Section Certifications -->
+  <Certificats />
 
   <!-- Section Contact -->
   <Contact />

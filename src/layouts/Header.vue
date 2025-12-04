@@ -72,6 +72,13 @@ const scrollToSection = (sectionId: string) => {
             Compétences
           </a>
           <a 
+            href="#certificats" 
+            @click.prevent="scrollToSection('certificats')" 
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
+          >
+            Certifications
+          </a>
+          <a 
             href="#contact" 
             @click.prevent="scrollToSection('contact')" 
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
