@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Switch from '../components/Switch.vue'
 
 const isMenuOpen = ref(false)
 
@@ -34,7 +33,6 @@ const scrollToSection = (sectionId: string) => {
             Portfolio
           </a>
         </div>
-        <Switch />
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
