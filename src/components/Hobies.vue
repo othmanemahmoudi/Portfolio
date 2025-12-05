@@ -3,7 +3,11 @@ import HobieCard from './HobieCard.vue'
 import BannerImage from './BannerImage.vue'
 
 // Import des images locales
-import othmaneImage from '../assets/othmane.png'
+import h1 from '../assets/hobies/h1.jpeg'
+import h2 from '../assets/hobies/h2.jpeg'
+import h3 from '../assets/hobies/h3.jpeg'
+import h4 from '../assets/hobies/h4.jpeg'
+import h5 from '../assets/hobies/h5.jpeg'
 
 const hobies = [
   {
@@ -40,7 +44,11 @@ const hobies = [
 
 // Images extraites automatiquement pour le banner
 const hobiesImages = [
-  othmaneImage,
+  h4,
+  h2,
+  h1,
+  h3,
+  h5
 ]
 </script>
 
