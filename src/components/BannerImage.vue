@@ -1,22 +1,10 @@
 <template>
   <div class="w-full overflow-hidden py-10 relative">
     <div class="banner-track flex gap-6">
-      <!-- Triple série pour un effet plus fluide -->
+      <!-- Dupliquer les images jusqu'à en avoir un nombre suffisant -->
       <img
-        v-for="(img, index) in images"
-        :key="'img-a-' + index"
-        :src="img"
-        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
-      />
-      <img
-        v-for="(img, index) in images"
-        :key="'img-b-' + index"
-        :src="img"
-        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
-      />
-      <img
-        v-for="(img, index) in images"
-        :key="'img-c-' + index"
+        v-for="(img, index) in duplicatedImages"
+        :key="index"
         :src="img"
         class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
       />
@@ -25,9 +13,29 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue'
+
+const props = defineProps<{
   images: string[]
 }>()
+
+// Dupliquer les images pour en avoir au moins 10 dans la piste
+const duplicatedImages = computed(() => {
+  const duplicated: string[] = []
+  const minImages = 10 // Nombre minimum d'images dans la piste
+  
+  // Si on n'a pas d'images, retourner un tableau vide
+  if (props.images.length === 0) return duplicated
+  
+  // Dupliquer les images jusqu'à atteindre minImages
+  let i = 0
+  while (duplicated.length < minImages) {
+    duplicated.push(props.images[i % props.images.length])
+    i++
+  }
+  
+  return duplicated
+})
 </script>
 
 <style scoped>
@@ -42,7 +50,8 @@ defineProps<{
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-66.666%);
+    /* On décale de la moitié de la largeur totale de la piste (car on a dupliqué les images) */
+    transform: translateX(-50%);
   }
 }
 
