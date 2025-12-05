@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HobieCard from './HobieCard.vue'
+import BannerImage from './BannerImage.vue'
 
 const hobies = [
   {
@@ -33,12 +34,17 @@ const hobies = [
     bgImage: 'https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=800'
   }
 ]
+
+// Images extraites automatiquement pour le banner
+const hobiesImages = hobies.map(h => h.bgImage)
 </script>
 
 <template>
   <section id="hobies" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
-    
-    <div class="text-center mb-12">
+
+
+
+    <div class="text-center my-12">
       <h2 class="text-4xl font-bold text-[#2A2A2A] mb-4">Loisirs</h2>
       <p class="text-lg text-[#2A2A2A]/70">Ce que j’aime faire en dehors du développement</p>
     </div>
@@ -51,7 +57,10 @@ const hobies = [
         :icon="hobie.icon"
         :bgImage="hobie.bgImage"
       />
+          <!-- Banner -->
+    <BannerImage :images="hobiesImages" />
     </div>
+    
 
   </section>
 </template>
