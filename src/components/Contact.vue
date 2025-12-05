@@ -40,7 +40,7 @@ const contacts = [
 <template>
   <section id="contact" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-[#2A2A2A] mb-4">Me Contacter</h2>
+      <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Me Contacter</h2>
       <p class="text-lg text-[#2A2A2A]/70">Restons en contact ! Choisissez votre plateforme préférée</p>
     </div>
     

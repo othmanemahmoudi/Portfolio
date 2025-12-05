@@ -106,8 +106,8 @@ const scrollToSection = (sectionId: string) => {
           class="flex flex-col items-center text-gray-400 hover:text-[#CFAF71] transition-colors"
           aria-label="Scroll down"
         >
-          <span class="text-sm mb-2">Découvrir</span>
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span class="text-sm mb-2 text-[#CFAF71]">Découvrir</span>
+          <svg class="w-6 h-6 text-[#CFAF71]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </button>

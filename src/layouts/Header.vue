@@ -58,11 +58,11 @@ const scrollToSection = (sectionId: string) => {
             Expérience
           </a>
           <a 
-            href="#projects" 
-            @click.prevent="scrollToSection('projects')" 
+            href="#languages" 
+            @click.prevent="scrollToSection('languages')" 
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
-            Projets
+            Langages
           </a>
           <a 
             href="#skills" 
@@ -84,6 +84,13 @@ const scrollToSection = (sectionId: string) => {
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Contact
+          </a>
+                    <a 
+            href="#hobies" 
+            @click.prevent="scrollToSection('hobies')" 
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
+          >
+            Loisirs
           </a>
         </div>
 
@@ -142,11 +149,11 @@ const scrollToSection = (sectionId: string) => {
             Expérience
           </a>
           <a 
-            href="#projects" 
-            @click.prevent="scrollToSection('projects')" 
+            href="#languages" 
+            @click.prevent="scrollToSection('languages')" 
             class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
           >
-            Projets
+            Langages
           </a>
           <a 
             href="#skills" 
@@ -161,6 +168,13 @@ const scrollToSection = (sectionId: string) => {
             class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
           >
             Contact
+          </a>
+          <a 
+            href="#hobies" 
+            @click.prevent="scrollToSection('hobies')" 
+            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+          >
+            Loisirs
           </a>
         </div>
       </div>

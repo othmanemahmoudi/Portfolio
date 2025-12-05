@@ -2,9 +2,8 @@
 defineProps({
   language: { type: String, required: true },
   flag: { type: String, required: true },
-  level: { type: String, required: true },
-  percentage: { type: Number, required: true },
-  bgImage: { type: String, default: '' }
+  level: { type: String, required: true }
+
 })
 </script>
 
@@ -12,12 +11,7 @@ defineProps({
   <div 
     class="relative group w-full sm:w-[48%] lg:w-[30%] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer"
   >
-    <!-- Image de fond si fournie -->
-    <div 
-      v-if="bgImage"
-      class="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-      :style="{ backgroundImage: `url(${bgImage})` }"
-    ></div>
+
     
     <!-- Gradient de fond animé -->
     <div class="absolute inset-0 bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 group-hover:from-[#CFAF71]/30 group-hover:via-[#FFECC2]/30 group-hover:to-[#8B6937]/30 transition-all duration-500"></div>

@@ -28,8 +28,8 @@ const scrollToTop = () => {
               </a>
             </li>
             <li>
-              <a href="#projects" class="text-gray-400 hover:text-white transition-colors text-sm">
-                Projets
+              <a href="#languages" class="text-gray-400 hover:text-white transition-colors text-sm">
+                Langages
               </a>
             </li>
             <li>
