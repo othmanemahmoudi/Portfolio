@@ -1,34 +1,40 @@
 <template>
-  <div class="w-full overflow-hidden py-10">
+  <div class="w-full overflow-hidden py-10 relative">
     <div class="banner-track flex gap-6">
-      <!-- première série -->
+      <!-- Triple série pour un effet plus fluide -->
       <img
         v-for="(img, index) in images"
-        :key="'img-' + index"
+        :key="'img-a-' + index"
         :src="img"
-        class="h-40 w-auto rounded-xl shadow-md object-cover"
+        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
       />
-
-      <!-- duplication pour la boucle infinie -->
       <img
         v-for="(img, index) in images"
-        :key="'clone-' + index"
+        :key="'img-b-' + index"
         :src="img"
-        class="h-40 w-auto rounded-xl shadow-md object-cover"
+        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
+      />
+      <img
+        v-for="(img, index) in images"
+        :key="'img-c-' + index"
+        :src="img"
+        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  images: Array
-})
+defineProps<{
+  images: string[]
+}>()
 </script>
 
 <style scoped>
 .banner-track {
-  animation: infiniteSlide 25s linear infinite;
+  display: flex;
+  animation: infiniteSlide 30s linear infinite;
+  will-change: transform;
 }
 
 @keyframes infiniteSlide {
@@ -36,8 +42,11 @@ defineProps({
     transform: translateX(0);
   }
   100% {
-    /* 50% signifie : faire glisser juste la moitié (1 série) pour un effet sans coupure */
-    transform: translateX(-50%);
+    transform: translateX(-66.666%);
   }
+}
+
+.banner-track:hover {
+  animation-play-state: paused;
 }
 </style>
