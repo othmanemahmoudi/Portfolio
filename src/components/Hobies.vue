@@ -4,7 +4,6 @@ import BannerImage from './BannerImage.vue'
 
 // Import des images locales
 import othmaneImage from '../assets/othmane.png'
-import vueImage from '../assets/vue.svg'
 
 const hobies = [
   {
@@ -42,7 +41,6 @@ const hobies = [
 // Images extraites automatiquement pour le banner
 const hobiesImages = [
   othmaneImage,
-  vueImage,
 ]
 </script>
 

@@ -6,7 +6,7 @@
         v-for="(img, index) in duplicatedImages"
         :key="index"
         :src="img"
-        class="h-40 w-auto rounded-xl shadow-md object-cover flex-shrink-0"
+        class="h-auto w-80 rounded-xl shadow-md object-cover flex-shrink-0"
       />
     </div>
   </div>
