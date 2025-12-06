@@ -53,9 +53,9 @@ const hobiesImages = [
 </script>
 
 <template>
-  <section id="hobies" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
+  <section id="hobies" class=" flex flex-col items-center justify-center px-4">
     <div class="text-center my-12">
-      <h2 class="text-4xl font-bold text-[#2A2A2A] mb-4">Loisirs</h2>
+      <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Loisirs</h2>
       <p class="text-lg text-[#2A2A2A]/70">Ce que j'aime faire en dehors du développement</p>
     </div>
 

@@ -74,6 +74,12 @@ const skillCategories = [
     ]
   }
 ]
+
+// Fonction pour regrouper les catégories par 2
+const groupedCategories = []
+for (let i = 0; i < skillCategories.length; i += 2) {
+  groupedCategories.push(skillCategories.slice(i, i + 2))
+}
 </script>
 
 <template>
@@ -84,29 +90,36 @@ const skillCategories = [
     </div>
 
     <div class="w-full max-w-7xl space-y-16">
-      <!-- <SkillsSphere /> -->
+      <!-- On regroupe les catégories par 2 -->
       <div 
-        v-for="category in skillCategories" 
-        :key="category.title"
-        class="w-full"
+        v-for="(pair, index) in groupedCategories" 
+        :key="index"
+        class="flex flex-col md:flex-row gap-12 justify-center"
       >
-        <!-- Titre de catégorie -->
-        <h3 class="text-1xl font-semibold mb-6 text-[#CFAF71] text-center">
-          {{ category.title }}
-        </h3>
+        <div 
+          v-for="category in pair" 
+          :key="category.title"
+          class="w-full md:w-1/2"
+        >
+          <!-- Titre de catégorie -->
+          <h3 class="text-1xl font-semibold mb-6 text-[#CFAF71] text-center">
+            {{ category.title }}
+          </h3>
 
-        <div class="flex flex-wrap justify-center gap-4">
-          <SkillCard
-            v-for="skill in category.skills"
-            :key="skill.id"
-            :name="skill.name"
-            :icon="skill.icon"
-            :category="skill.category"
-            :bgImage="skill.bgImage"
-          />
+          <div class="flex flex-wrap justify-center gap-4">
+            <SkillCard
+              v-for="skill in category.skills"
+              :key="skill.id"
+              :name="skill.name"
+              :icon="skill.icon"
+              :category="skill.category"
+              :bgImage="skill.bgImage"
+            />
+          </div>
         </div>
       </div>
     </div>
 
   </section>
 </template>
+

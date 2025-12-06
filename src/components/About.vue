@@ -5,13 +5,12 @@ const terminalText = ref('')
 const showCursor = ref(true)
 const isTypingComplete = ref(false)
 
-const fullText = `Développeur Python Full Stack avec plus de deux ans d’expérience. Passionné par le code, la création et la résolution de
-problèmes complexes. Compétent en développement backend et frontend, microservices, intégration API et automatisation.
+const fullText = `Développeur Python Full Stack avec plus de deux ans d’expérience. Passionné par le code, la création et la résolution de problèmes complexes. Compétent en développement backend et frontend, microservices, intégration API et automatisation.
 Orienté solution, créativité et amélioration continue.`
 
 onMounted(() => {
   let index = 0
-  const typingSpeed = 30 // millisecondes par caractère
+  const typingSpeed = 50 // millisecondes par caractère
   
   const typeText = () => {
     if (index < fullText.length) {

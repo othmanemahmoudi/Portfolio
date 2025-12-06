@@ -24,7 +24,7 @@ const languages = [
 </script>
 
 <template>
-  <section id="languages" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
+  <section id="languages" class=" flex flex-col items-center justify-center">
     <div class="text-center mb-12">
       <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Langues</h2>
       <p class="text-lg text-[#2A2A2A]/70">Communication internationale</p>

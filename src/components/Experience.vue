@@ -85,7 +85,7 @@ const projects = [
 </script>
 
 <template>
-  <section id="experience" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
+  <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4">
     <h2 class="text-4xl font-bold text-[#CFAF71] mb-12">Experiences professionnelles</h2>
 
     <div class="flex flex-col items-center justify-center gap-6">
