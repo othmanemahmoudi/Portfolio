@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import SwitchTheme from '../components/SwitchTheme.vue'
 
 const isMenuOpen = ref(false)
 
@@ -29,10 +30,12 @@ const scrollToSection = (sectionId: string) => {
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="#" @click.prevent="scrollToSection('hero')" class="text-2xl font-bold text-white hover:text-[#CFAF71] transition-colors">
+          <a href="#" @click.prevent="scrollToSection('hero')" class="dark:text-[#FFFFFF] text-2xl font-bold text-white hover:text-[#CFAF71] transition-colors">
             Portfolio
           </a>
         </div>
+
+        <SwitchTheme />
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">

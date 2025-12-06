@@ -3,7 +3,7 @@
     class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
     @click.self="$emit('close')"
   >
-    <div class="bg-white rounded-2xl shadow-2xl w-[90%] max-w-5xl h-[85%] flex flex-col relative animate-fadeInModal border border-[#CFAF71]/30 overflow-hidden">
+    <div class="bg-white rounded-2xl shadow-2xl w-[85%]  h-[85%] flex flex-col relative animate-fadeInModal border border-[#CFAF71]/30 overflow-hidden">
 
       <!-- Header fixe -->
       <div class="flex-shrink-0 p-6 pb-4 border-b border-[#CFAF71]/20 bg-gradient-to-r from-[#CFAF71]/10 to-[#8B6937]/10">

@@ -1,10 +1,23 @@
 
+<<<<<<< HEAD
 <script setup></script>
+=======
+<script lang="ts">
+import { useDark, useToggle } from '@vueuse/core'
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
+</script>
+>>>>>>> 24c6321 (Adapte ProjectModal and SwitchTheme)
 <template>
 
     <!-- From Uiverse.io by Galahhad --> 
 <label class="theme-switch">
+<<<<<<< HEAD
   <input type="checkbox" class="theme-switch__checkbox">
+=======
+  <input type="checkbox" class="theme-switch__checkbox" :checked="isDark" @change="toggleDark()" />
+>>>>>>> 24c6321 (Adapte ProjectModal and SwitchTheme)
   <div class="theme-switch__container">
     <div class="theme-switch__clouds"></div>
     <div class="theme-switch__stars-container">
@@ -28,7 +41,11 @@
 <style>
 /* From Uiverse.io by Galahhad */ 
 .theme-switch {
+<<<<<<< HEAD
   --toggle-size: 30px;
+=======
+  --toggle-size: 10px;
+>>>>>>> 24c6321 (Adapte ProjectModal and SwitchTheme)
   /* the size is adjusted using font-size,
      this is not transform scale,
      so you can choose any size */
