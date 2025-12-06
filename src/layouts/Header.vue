@@ -60,12 +60,12 @@ const scrollToSection = (sectionId: string) => {
           >
             Expérience
           </a>
-          <a 
-            href="#languages" 
-            @click.prevent="scrollToSection('languages')" 
+                    <a 
+            href="#certificats" 
+            @click.prevent="scrollToSection('certificats')" 
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
-            Langages
+            Certifications
           </a>
           <a 
             href="#skills" 
@@ -75,11 +75,19 @@ const scrollToSection = (sectionId: string) => {
             Compétences
           </a>
           <a 
-            href="#certificats" 
-            @click.prevent="scrollToSection('certificats')" 
+            href="#languages" 
+            @click.prevent="scrollToSection('languages')" 
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
-            Certifications
+            Langages
+          </a>
+
+                    <a 
+            href="#hobies" 
+            @click.prevent="scrollToSection('hobies')" 
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
+          >
+            Loisirs
           </a>
           <a 
             href="#contact" 
@@ -87,13 +95,6 @@ const scrollToSection = (sectionId: string) => {
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
             Contact
-          </a>
-                    <a 
-            href="#hobies" 
-            @click.prevent="scrollToSection('hobies')" 
-            class="text-white hover:text-[#CFAF71] transition-colors font-medium"
-          >
-            Loisirs
           </a>
         </div>
 

@@ -22,9 +22,9 @@ import Hobies from '../components/Hobies.vue'
 
   <Languages />
 
-  <Contact />
-
   <Hobies />
+
+  <Contact />
 </template>
 
 <style scoped>
