@@ -133,7 +133,7 @@
       </div>
 
       <!-- Footer avec bouton à droite -->
-      <div class="flex-shrink-0 p-6 pt-4 bg-gradient-to-r from-[#CFAF71]/5 to-[#8B6937]/5 backdrop-blur-sm flex justify-end border-t border-[#CFAF71]/20">
+      <div class="flex-shrink-0 p-2 bg-gradient-to-r from-[#CFAF71]/5 to-[#8B6937]/5 backdrop-blur-sm flex justify-end border-t border-[#CFAF71]/20">
         <button
           @click="$emit('close')"
           class="bg-gradient-to-r from-[#2A2A2A] to-[#1A1A1A] cursor-pointer text-[#CFAF71] font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity shadow-md"

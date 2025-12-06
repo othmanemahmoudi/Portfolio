@@ -22,10 +22,10 @@ const openModal = () => { isModalOpen.value = true }
 
 <template>
   <div
-    class="w-full sm:w-[48%] lg:w-[30%] aspect-[4/5] bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-slideUp border border-[#CFAF71]/40"
+    class="w-full sm:w-[80%]  bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-slideUp border border-[#CFAF71]/40"
     @click="openModal"
   >
-    <div class="p-6 h-full flex flex-col justify-between">
+    <div class="p-6 h-full w-full flex flex-col justify-between">
       <div>
         <h3 class="text-xl font-bold mb-2 text-[#2A2A2A]">{{ title }}</h3>
         <p class="text-gray-700 mb-4 line-clamp-3">{{ description }}</p>
