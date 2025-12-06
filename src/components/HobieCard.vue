@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-64 h-40 rounded-xl overflow-hidden shadow-lg relative group cursor-pointer transition-transform transform hover:scale-105"
+    class="w-64 h-40 rounded-xl overflow-hidden shadow-lg relative group transition-transform transform hover:scale-105"
   >
     <!-- Background -->
     <img

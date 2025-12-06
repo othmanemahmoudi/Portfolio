@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div 
-    class="relative group  aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+    class="relative group  aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
   >
     <!-- Image de fond si fournie -->
     <div 

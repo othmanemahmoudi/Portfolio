@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div 
-    class="relative group w-full sm:w-[48%] lg:w-[30%] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer"
+    class="relative group w-full sm:w-[48%] lg:w-[30%] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
   >
 
     
