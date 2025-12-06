@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SkillCard from './SkillCard.vue'
+import SkillsSphere from '../components/SkillsSphere.vue'
 
 const skillCategories = [
   {
@@ -78,12 +79,12 @@ const skillCategories = [
 <template>
   <section id="skills" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
 
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Compétences</h2>
-      <p class="text-lg text-[#2A2A2A]/70">Technologies et outils que je maîtrise</p>
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-[#CFAF71]">Compétences</h2>
     </div>
 
     <div class="w-full max-w-7xl space-y-16">
+      <!-- <SkillsSphere /> -->
       <div 
         v-for="category in skillCategories" 
         :key="category.title"
