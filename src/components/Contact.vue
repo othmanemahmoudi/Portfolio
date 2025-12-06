@@ -8,7 +8,7 @@ const contacts = [
     icon: '📧',
     value: 'mahmoudi.othmane@gmail.com',
     link: 'mailto:mahmoudi.othmane@gmail.com',
-    color: 'from-pink-500 to-red-500'
+    bgImage: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800'
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const contacts = [
     icon: '💼',
     value: '@othmane-dev',
     link: 'https://linkedin.com/in/othmane',
-    color: 'from-blue-500 to-cyan-500'
+    bgImage: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=800'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const contacts = [
     icon: '🐙',
     value: '@othmane',
     link: 'https://github.com/othmane',
-    color: 'from-gray-700 to-purple-700'
+    bgImage: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800'
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const contacts = [
     icon: '💬',
     value: '+33 6 12 34 56 78',
     link: 'https://wa.me/33612345678',
-    color: 'from-green-500 to-emerald-500'
+    bgImage: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800'
   }
 ]
 
@@ -45,8 +45,8 @@ const activeContact = ref(null)
 
     <!-- Ligne entière -->
     <div
-      class="w-full max-w-5xl h-56 rounded-full overflow-hidden shadow-lg relative flex items-center justify-center transition-all duration-700 ease-in-out"
-      :class="activeContact ? `bg-gradient-to-br ${activeContact.color}` : 'bg-white'"
+      class="w-full max-w-5xl h-56 rounded-full overflow-hidden shadow-lg relative flex items-center justify-center transition-all duration-1000 ease-in-out"
+      :style="activeContact ? { backgroundImage: `url(${activeContact.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' } : { backgroundColor: '#fff' }"
       @mouseleave="activeContact = null"
     >
       <!-- État initial : 4 ronds -->
@@ -54,10 +54,10 @@ const activeContact = ref(null)
         <div
           v-for="contact in contacts"
           :key="contact.id"
-          class="w-24 h-24 rounded-full flex items-center justify-center text-white cursor-pointer bg-gradient-to-br from-gray-700 to-gray-900 hover:scale-110 transition-transform duration-500"
+          class="w-24 h-24 rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-500"
+          :style="{ backgroundImage: `url(${contact.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }"
           @mouseenter="activeContact = contact"
         >
-          <span class="text-3xl">{{ contact.icon }}</span>
         </div>
       </div>
 
@@ -66,7 +66,7 @@ const activeContact = ref(null)
         <div
           v-if="activeContact"
           key="active"
-          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 transition-opacity duration-700 ease-in-out"
+          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 transition-opacity duration-700 ease-in-out bg-black/50"
         >
           <a :href="activeContact.link" target="_blank" class="flex flex-col items-center">
             <span class="text-6xl mb-4 animate-pulse">{{ activeContact.icon }}</span>
