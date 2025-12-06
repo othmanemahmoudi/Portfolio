@@ -23,17 +23,20 @@ const props = defineProps<{
 const duplicatedImages = computed(() => {
   const duplicated: string[] = []
   const minImages = 10 // Nombre minimum d'images dans la piste
-  
+
   // Si on n'a pas d'images, retourner un tableau vide
   if (props.images.length === 0) return duplicated
-  
+
   // Dupliquer les images jusqu'à atteindre minImages
   let i = 0
   while (duplicated.length < minImages) {
-    duplicated.push(props.images[i % props.images.length])
+    const img = props.images[i % props.images.length]
+    if (img) {
+      duplicated.push(img)
+    }
     i++
   }
-  
+
   return duplicated
 })
 </script>

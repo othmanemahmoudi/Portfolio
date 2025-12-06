@@ -3,11 +3,17 @@ import { ref } from 'vue'
 import ProjectModal from './ProjectModal.vue'
 
 // Props
-defineProps({
+const props = defineProps({
   title: { type: String, default: "Mon projet génial" },
   description: { type: String, default: "Voici une description rapide du projet." },
   status: { type: String, default: "En cours" },
-  date: { type: String, default: "Décembre 2025" }
+  date: { type: String, default: "Décembre 2025" },
+  company: { type: String, default: "" },
+  missions: { type: Array<string>, default: () => [] },
+  results: { type: Array<string>, default: () => [] },
+  technologies: { type: Array<string>, default: () => [] },
+  team: { type: String, default: "" },
+  link: { type: String, default: "" }
 })
 
 const isModalOpen = ref(false)
@@ -24,7 +30,7 @@ const openModal = () => { isModalOpen.value = true }
         <h3 class="text-xl font-bold mb-2 text-[#2A2A2A]">{{ title }}</h3>
         <p class="text-gray-700 mb-4 line-clamp-3">{{ description }}</p>
       </div>
-      
+
       <div class="flex justify-between items-center text-sm text-[#2A2A2A]/80 mt-auto">
         <span class="px-3 py-1 bg-[#CFAF71]/20 rounded-full">{{ status }}</span>
         <span>{{ date }}</span>
@@ -35,10 +41,16 @@ const openModal = () => { isModalOpen.value = true }
   <!-- Modal -->
   <ProjectModal
     v-if="isModalOpen"
-    :title="title"
-    :description="description"
-    :status="status"
-    :date="date"
+    :title="props.title"
+    :description="props.description"
+    :status="props.status"
+    :date="props.date"
+    :company="props.company"
+    :missions="props.missions"
+    :results="props.results"
+    :technologies="props.technologies"
+    :team="props.team"
+    :link="props.link"
     @close="isModalOpen = false"
   />
 </template>
