@@ -62,11 +62,11 @@ const activeContact = ref(null)
       </div>
 
       <!-- État actif : contact en grand -->
-      <transition name="fade" mode="out-in">
+      <transition>
         <div
           v-if="activeContact"
           key="active"
-          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 transition-opacity duration-700 ease-in-out bg-black/50"
+          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 bg-black/50"
         >
           <a :href="activeContact.link" target="_blank" class="flex flex-col items-center">
             <span class="text-6xl mb-4 animate-pulse">{{ activeContact.icon }}</span>
