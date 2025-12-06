@@ -40,8 +40,8 @@ const activeContact = ref(null)
 </script>
 
 <template>
-  <section id="contact" class="min-h-screen flex flex-col items-center justify-center py-20 px-4">
-    <h2 class="text-4xl font-bold text-[#CFAF71] mb-12">Me Contacter</h2>
+  <section id="contact" class=" flex flex-col items-center justify-center py-20 px-4">
+    <h2 class="text-4xl font-bold text-[#CFAF71] mb-6">Me Contacter</h2>
 
     <!-- Ligne entière -->
     <div
