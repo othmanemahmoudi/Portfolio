@@ -1,49 +1,45 @@
 <template>
-    <section id="formations" class=" flex flex-col items-center justify-center pt-20">
+  <section id="formations" class="flex flex-col items-center justify-center pt-20 bg-white">
+    <div class="flex flex-col items-center justify-center mb-12">
+      <!-- Titre -->
+      <h2 class="text-4xl font-bold text-[#CFAF71] mb-16 animate-fadeIn">
+        Mon Parcours Académique
+      </h2>
 
-        <div class="flex flex-col items-center justify-center bg-white mb-12">
-    <!-- Titre -->
-    <h2 class="text-4xl font-bold text-[#CFAF71]">
-      Mon Parcours Académique
-    </h2>
+      <!-- Stepper -->
+      <div class="stepper-box">
+        <div class="stepper-step stepper-completed">
+          <div class="stepper-circle animate-pulse">✓</div>
+          <div class="stepper-line animate-line"></div>
+          <div class="stepper-content animate-step">
+            <div class="stepper-title">Baccalauréat Scientifique</div>
+            <div class="stepper-status">Terminé</div>
+            <div class="stepper-time">2017 - 2020</div>
+          </div>
+        </div>
 
-    <!-- Stepper -->
-    <div class="stepper-box">
-      <div class="stepper-step stepper-completed">
-        <div class="stepper-circle">✓</div>
-        <div class="stepper-line"></div>
-        <div class="stepper-content">
-          <div class="stepper-title">Baccalauréat Scientifique</div>
-          <div class="stepper-status">Terminé</div>
-          <div class="stepper-time">2017 - 2020</div>
+        <div class="stepper-step stepper-completed">
+          <div class="stepper-circle animate-pulse">✓</div>
+          <div class="stepper-line animate-line"></div>
+          <div class="stepper-content animate-step delay-200">
+            <div class="stepper-title">Licence Informatique</div>
+            <div class="stepper-status">Terminé</div>
+            <div class="stepper-time">2020 - 2023</div>
+          </div>
         </div>
-      </div>
-      <div class="stepper-step stepper-completed">
-        <div class="stepper-circle">✓</div>
-        <div class="stepper-line"></div>
-        <div class="stepper-content">
-          <div class="stepper-title">Baccalauréat Scientifique</div>
-          <div class="stepper-status">Terminé</div>
-          <div class="stepper-time">2017 - 2020</div>
-        </div>
-      </div>
-            <div class="stepper-step stepper-completed">
-        <div class="stepper-circle">✓</div>
-        <div class="stepper-line"></div>
-        <div class="stepper-content">
-          <div class="stepper-title">Baccalauréat Scientifique</div>
-          <div class="stepper-status">Terminé</div>
-          <div class="stepper-time">2017 - 2020</div>
+
+        <div class="stepper-step stepper-completed">
+          <div class="stepper-circle animate-pulse">✓</div>
+          <div class="stepper-content animate-step delay-400">
+            <div class="stepper-title">Master Informatique</div>
+            <div class="stepper-status">En cours</div>
+            <div class="stepper-time">2023 - 2025</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-    </section>
+  </section>
 </template>
-
-<script setup>
-</script>
 
 <style scoped>
 .stepper-box {
@@ -54,7 +50,7 @@
 
 .stepper-step {
   display: flex;
-  margin-bottom: 48px; /* plus d’espace entre les formations */
+  margin-bottom: 48px;
   position: relative;
 }
 
@@ -70,12 +66,10 @@
   width: 2px;
   background: linear-gradient(to bottom, #CFAF71, #FFECC2, #8B6937);
   z-index: 1;
+  transform-origin: top; /* la ligne grandit depuis le cercle */
 }
 
-.stepper-step:last-child .stepper-line {
-  display: none;
-}
-
+/* Cercle */
 .stepper-circle {
   width: 40px;
   height: 40px;
@@ -87,52 +81,43 @@
   z-index: 2;
   font-weight: bold;
 }
-
-/* États */
 .stepper-completed .stepper-circle {
   background: linear-gradient(to right, #CFAF71, #8B6937);
   color: white;
 }
 
-.stepper-title {
-  font-weight: 600;
-  margin-bottom: 10px;
-
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 2s ease forwards;
 }
 
-.stepper-completed .stepper-title {
-  color: #8B6937;
+@keyframes step {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-step {
+  animation: step 2s ease forwards;
+}
+.delay-200 { animation-delay: 0.5s; }
+.delay-400 { animation-delay: 1s; }
+
+@keyframes lineGrow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+.animate-line {
+  animation: lineGrow 2s ease forwards;
 }
 
-.stepper-active .stepper-title {
-  color: #CFAF71;
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(207,175,113,0.6); }
+  50% { transform: scale(1.1); box-shadow: 0 0 15px 5px rgba(207,175,113,0.3); }
 }
-
-.stepper-pending .stepper-title {
-  color: #8B6937;
-  opacity: 0.6;
-}
-
-.stepper-status {
-  font-size: 13px;
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin-top: 4px;
-}
-
-.stepper-completed .stepper-status {
-  background-color: #FFECC2;
-  color: #8B6937;
-}
-
-.stepper-active .stepper-status {
-  background-color: #CFAF71;
-  color: white;
-}
-
-.stepper-time {
-  font-size: 12px;
-  color: #8B6937;
+.animate-pulse {
+  animation: pulse 2s infinite;
 }
 </style>
