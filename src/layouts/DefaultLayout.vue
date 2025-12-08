@@ -7,6 +7,7 @@ import Contact from '../components/Contact.vue'
 import Certificats from '../components/Certificats.vue'
 import Languages from '../components/Languages.vue'
 import Hobies from '../components/Hobies.vue'
+import Educations from '../components/Educations.vue'
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import Hobies from '../components/Hobies.vue'
   <About />
 
   <Experience />
+
+  <Educations />
 
   <Certificats />
 
