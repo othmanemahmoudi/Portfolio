@@ -2,42 +2,42 @@
 import CertificationCard from './CertificationCard.vue'
 
 const certifications = [
-  {
+    {
     id: 1,
-    title: 'AWS Certified Solutions Architect',
-    subtitle: 'Amazon Web Services',
-    description: 'Certification professionnelle démontrant une expertise dans la conception de systèmes distribués sur AWS.',
-    date: 'Janvier 2024 - Présent',
-    tags: ['AWS', 'Cloud', 'Architecture'],
-    certificateUrl: 'https://exemple.com/cert1'
+    title: 'Python for Data Science, AI & Development',
+    subtitle: 'IBM',
+    description: 'Maîtrise complète Pandas et NumPy, travail sous Jupyter Notebook et extraction de données via APIs et web scraping.',
+    date: 'octobre 2022',
+    tags: ['Data Analysis', 'Data Processing', 'Data Manipulation'],
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/UW9FWM6RVPHK'
   },
   {
     id: 2,
-    title: 'Vue.js 3 Master Certification',
-    subtitle: 'Vue School',
-    description: 'Maîtrise avancée du framework Vue.js 3 incluant Composition API, Pinia et Vue Router.',
-    date: 'Mars 2024',
-    tags: ['Vue.js', 'Frontend', 'JavaScript'],
-    certificateUrl: 'https://exemple.com/cert2'
-  },
-  {
-    id: 3,
-    title: 'Professional Scrum Master I',
-    subtitle: 'Scrum.org',
-    description: 'Certification en méthodologie Agile et gestion de projets avec le framework Scrum.',
-    date: 'Juin 2023',
-    tags: ['Agile', 'Scrum', 'Project Management'],
-    certificateUrl: 'https://exemple.com/cert3'
+    title: 'Gestion de projet Agile',
+    subtitle: 'Google',
+    description: 'Maîtrise avancée de la gestion de projet Agile avec le cadre Scrum, incluant valeurs, piliers, événements clés et accompagnement des équipes.',
+    date: 'décembre 2022',
+    tags: ['Agile Methodology', 'Sprint Planning', 'Team Management'],
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/T92C2M4RZHGL'
   },
   {
     id: 4,
-    title: 'Docker Certified Associate',
-    subtitle: 'Docker Inc.',
-    description: 'Compétences avancées en conteneurisation et déploiement d\'applications avec Docker.',
-    date: 'Septembre 2023',
-    tags: ['Docker', 'DevOps', 'Containers'],
-    certificateUrl: 'https://exemple.com/cert4'
-  }
+    title: 'Tosa Python 3',
+    subtitle: 'Tosa',
+    description: 'Vérifier le score avec le code: 2023-231913929-101, le score: 783/1000.',
+    date: 'Mars 2023',
+    tags: ['Python'],
+    certificateUrl: 'https://www.tosa.org/FR/index#'
+  },
+    {
+    id: 3,
+    title: 'Python Packages for Data Science',
+    subtitle: 'University of Colorado Boulder',
+    description: 'Maîtrise des principaux outils pour la data science, incluant manipulation de données et visualisations avancées avec Matplotlib et Seaborn.',
+    date: 'Juin 2023',
+    tags: ['Matplotlib', 'Seaborn', 'Plot (Graphics)', 'Data Visualization'],
+    certificateUrl: 'https://www.coursera.org/account/accomplishments/verify/CGDRPZAKWSWC'
+  },
 ]
 </script>
 
