@@ -5,8 +5,23 @@ const terminalText = ref('')
 const showCursor = ref(true)
 const isTypingComplete = ref(false)
 
-const fullText = `Développeur Python Full Stack avec plus de deux ans d’expérience. Passionné par le code, la création et la résolution de problèmes complexes. Compétent en développement backend et frontend, microservices, intégration API et automatisation.
-Orienté solution, créativité et amélioration continue.`
+const fullText = `Développeur Python Full Stack, je possède une expérience dans la conception, le développement et l’optimisation de solutions web modernes. Mon parcours m’a permis de travailler sur des projets variés, allant de plateformes SaaS omnicanales à des applications spécialisées en génération de contenu et en interfaces innovantes. Passionné par le code et animé par la volonté de résoudre des problèmes complexes, je combine expertise technique, créativité et rigueur pour livrer des solutions robustes, performantes et adaptées aux besoins des utilisateurs.
+
+🎯 Mon approche
+Polyvalence technique : maîtrise des environnements backend (Python, Django, Flask, microservices, API REST sécurisées) et frontend (Vue.js, TailwindCSS, TypeScript).
+
+Culture DevOps : expérience en CI/CD, Docker, Kubernetes, monitoring et automatisation pour garantir la fiabilité et la scalabilité des systèmes.
+
+Esprit collaboratif : habitué à travailler en synergie avec des équipes R&D, produit et design, afin d’assurer des mises à jour continues et une qualité optimale.
+
+Orientation solution : capacité à transformer des besoins métiers en fonctionnalités concrètes, sécurisées et performantes.
+
+🔑 Ce qui me distingue
+Une passion constante pour le code et l’innovation.
+
+Une capacité à allier performance technique et sens de l’expérience utilisateur.
+
+Une volonté d’amélioration continue et d’apprentissage permanent.`
 
 onMounted(() => {
   let index = 0

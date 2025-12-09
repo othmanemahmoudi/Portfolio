@@ -14,7 +14,7 @@ const scrollToTop = () => {
         <div>
           <h3 class="text-xl font-bold mb-4">Portfolio</h3>
           <p class="text-gray-400 text-sm">
-            Développeur passionné créant des expériences web modernes et innovantes.
+            Développeur Python Full Stack. Passionné par le code, la création et la résolution de problèmes complexes. Compétent en développement backend et frontend, microservices, intégration API et automatisation. Orienté solution, créativité et amélioration continue.
           </p>
         </div>
 

@@ -44,7 +44,7 @@ const scrollToSection = (sectionId: string) => {
               Me contacter
             </button>
             <button 
-              @click="scrollToSection('projects')"
+              @click="scrollToSection('experience')"
               class="px-8 py-3 bg-transparent text-[#CFAF71] font-semibold rounded-lg border-2 border-[#CFAF71] hover:bg-[#CFAF71]/10 transition-all duration-300 transform hover:scale-105"
             >
               Voir mes projets

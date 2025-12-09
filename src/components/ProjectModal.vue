@@ -117,7 +117,7 @@
         </div>
 
         <!-- Liens / Actions -->
-        <div v-if="link" class="mb-4">
+        <div v-if="link && link !== '#'" class="mb-4">
           <a
             :href="link"
             target="_blank"

@@ -32,7 +32,7 @@ const openModal = () => { isModalOpen.value = true }
       </div>
 
       <div class="flex justify-between items-center text-sm text-[#2A2A2A]/80 mt-auto">
-        <span class="px-3 py-1 bg-[#CFAF71]/20 rounded-full">{{ status }}</span>
+        <span class="px-3 py-1 bg-[#CFAF71]/20 rounded-full">{{ company }}</span>
         <span>{{ date }}</span>
       </div>
     </div>

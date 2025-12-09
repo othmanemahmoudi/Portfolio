@@ -4,11 +4,11 @@ import ProjectCard from './ProjectCard.vue';
 const projects = [
   {
     id: 1,
-    title: 'Plateforme E-commerce Multi-vendeurs',
-    description: 'Développement complet d\'une plateforme e-commerce moderne avec gestion multi-vendeurs, panier intelligent, système de paiement sécurisé et tableau de bord administrateur avancé.',
-    status: 'Terminé',
-    date: 'Janvier 2024 - Juin 2024',
-    company: 'TechCommerce Solutions',
+    title: 'Développeur Python Full Stack - SaaS retail E-commerce Platform',
+    description: 'Développement et maintenance de la plateforme OneStock, une solution SaaS omnicanale reposant sur une architecture microservices (Python, Flask, MongoDB, Redis, Docker). Conception et intégration de nouvelles fonctionnalités backend et frontend destinées aux retailers, avec un fort accent sur la performance, la sécurité et la haute disponibilité.',
+    status: 'En cours',
+    date: 'Octobre 2023 - Present',
+    company: 'Onestock',
     missions: [
       'Conception et développement de l\'architecture backend avec Django REST Framework',
       'Création d\'interfaces utilisateur réactives avec Vue.js et Tailwind CSS',
@@ -26,15 +26,15 @@ const projects = [
     ],
     technologies: ['Python', 'Django', 'Vue.js', 'PostgreSQL', 'Redis', 'Docker', 'Stripe API', 'AWS S3', 'Celery'],
     team: 'Équipe de 5 développeurs (2 Backend, 2 Frontend, 1 DevOps)',
-    link: '#'
+    link: 'https://www.onestock-retail.com/fr/'
   },
   {
     id: 2,
-    title: 'Application Mobile de Suivi Fitness',
-    description: 'Application mobile cross-platform permettant le suivi des performances sportives, la définition d\'objectifs personnalisés et la synchronisation avec des dispositifs connectés.',
-    status: 'En cours',
-    date: 'Juillet 2024 - Présent',
-    company: 'FitTech Innovation',
+    title: 'Développeur Python backend - Plateforme de génération et gestion de documents PDF automatisés',
+    description: 'Conception et développement d’une application backend avec Django permettant la génération automatisée de fichiers PDF dynamiques à partir de contenus personnalisables, appuyée par une base de données SQLite assurant le stockage, la structuration et la récupération des informations nécessaires.',
+    status: 'Terminé',
+    date: 'Avril - Mai 2023',
+    company: 'M2I',
     missions: [
       'Développement backend avec FastAPI pour des performances optimales',
       'Création d\'algorithmes de calcul de performances et recommandations personnalisées',
@@ -56,11 +56,11 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Dashboard Analytics B2B',
-    description: 'Plateforme d\'analyse de données en temps réel pour entreprises avec visualisations avancées, rapports automatisés et prédictions basées sur le machine learning.',
+    title: 'Développeur Python logiciel - Syllabic Keyboard System',
+    description: 'Développement d’une nouvelle génération de clavier syllabique, optimisé pour la performance, la fluidité et la fiabilité.',
     status: 'Terminé',
-    date: 'Mars 2023 - Décembre 2023',
-    company: 'DataViz Pro',
+    date: 'Mars - Septembre 2022',
+    company: 'PIAmot',
     missions: [
       'Architecture et développement d\'une plateforme d\'analytics scalable',
       'Création de dashboards interactifs avec visualisations personnalisables',
@@ -79,14 +79,15 @@ const projects = [
     ],
     technologies: ['Python', 'Flask', 'React', 'PostgreSQL', 'Pandas', 'Scikit-learn', 'D3.js', 'Docker', 'Kubernetes', 'Apache Airflow'],
     team: 'Équipe de 6 personnes (2 Backend, 2 Frontend, 1 Data Scientist, 1 Product Owner)',
-    link: '#'
+    link: 'https://piamot.com/'
   }
 ];
 </script>
 
 <template>
   <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4">
-    <h2 class="text-4xl font-bold text-[#CFAF71] mb-12">Experiences professionnelles</h2>
+    <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Experiences professionnelles</h2>
+    <p class="text-lg text-[#2A2A2A]/70 mb-8">veuillez cliquer sur les cartes pour plus de détails</p>
 
     <div class="flex flex-col items-center justify-center gap-6">
       <ProjectCard
