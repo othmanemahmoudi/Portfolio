@@ -31,9 +31,9 @@ const scrollToSection = (sectionId: string) => {
             <span class="block text-[#CFAF71]">Python Full Stack</span>
           </h1>
           
-          <p class="text-lg md:text-xl text-[#2A2A2A] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Passionné par le développement web et les technologies Python, je crée des applications 
-            modernes et performantes en utilisant Django, FastAPI, React et bien plus encore.
+          <p class="text-lg md:text-xl text-[#2A2A2A] leading-relaxed max-w-3xl mx-auto lg:mx-0">
+            Passionné par le développement Full Stack, je crée des applications 
+            modernes et performantes en utilisant Python, Java, Docker, Vue et bien plus encore.
           </p>
           
           <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -56,11 +56,15 @@ const scrollToSection = (sectionId: string) => {
             <p class="text-sm text-[#2A2A2A] mb-3">Technologies que j'utilise :</p>
             <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Python</span>
-              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Django</span>
+              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Java</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">FastAPI</span>
-              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">React</span>
-              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">PostgreSQL</span>
+              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Vue</span>
+              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Linux</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Docker</span>
+              <a href="#skills" 
+                class="hover:text-[#CFAF71] ml-4 px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">
+                Voir toutes les compétences
+              </a>
             </div>
           </div>
         </div>
