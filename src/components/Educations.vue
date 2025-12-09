@@ -12,9 +12,9 @@
           <div class="stepper-circle animate-pulse">✓</div>
           <div class="stepper-line animate-line"></div>
           <div class="stepper-content animate-step">
-            <div class="stepper-title">Baccalauréat Scientifique</div>
-            <div class="stepper-status">Terminé</div>
-            <div class="stepper-time">2017 - 2020</div>
+            <div class="stepper-title">Master 2 – Université Paris Saclay</div>
+            <div class="stepper-status">Ingénierie des Systèmes Aéronautiques et Spatiaux</div>
+            <div class="stepper-time">2021 - 2022</div>
           </div>
         </div>
 
@@ -22,18 +22,18 @@
           <div class="stepper-circle animate-pulse">✓</div>
           <div class="stepper-line animate-line"></div>
           <div class="stepper-content animate-step delay-200">
-            <div class="stepper-title">Licence Informatique</div>
-            <div class="stepper-status">Terminé</div>
-            <div class="stepper-time">2020 - 2023</div>
+            <div class="stepper-title">Diplôme d’ingénieur d’état – EMS</div>
+            <div class="stepper-status">Ingénierie des Automatismes et Informatique Industrielle</div>
+            <div class="stepper-time">2018 - 2020</div>
           </div>
         </div>
 
         <div class="stepper-step stepper-completed">
           <div class="stepper-circle animate-pulse">✓</div>
           <div class="stepper-content animate-step delay-400">
-            <div class="stepper-title">Master Informatique</div>
-            <div class="stepper-status">En cours</div>
-            <div class="stepper-time">2023 - 2025</div>
+            <div class="stepper-title">Licence d’études fondamentales - Université Hassan II</div>
+            <div class="stepper-status">Sciences de la matière Physique parcours Électronique</div>
+            <div class="stepper-time">2015 - 2018</div>
           </div>
         </div>
       </div>
@@ -45,7 +45,19 @@
 .stepper-box {
   background-color: white;
   padding: 32px;
-  width: 420px;
+  width: 500px;
+}
+
+.stepper-status {
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-top: 4px;
+}
+
+.stepper-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2A2A2A;
 }
 
 .stepper-step {
