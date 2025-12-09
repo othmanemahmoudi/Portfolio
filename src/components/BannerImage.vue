@@ -1,13 +1,14 @@
 <template>
   <div class="w-full overflow-hidden py-10 relative">
-    <div class="banner-track flex gap-6">
-      <!-- Dupliquer les images jusqu'à en avoir un nombre suffisant -->
-      <img
-        v-for="(img, index) in duplicatedImages"
-        :key="index"
-        :src="img"
-        class="h-80 w-70 rounded-xl shadow-md object-cover flex-shrink-0"
-      />
+    <div class="banner-track">
+      <div class="banner-content flex gap-6">
+        <img
+          v-for="(img, index) in duplicatedImages"
+          :key="index"
+          :src="img"
+          class="h-80 w-70 rounded-xl shadow-md object-cover flex-shrink-0"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -19,46 +20,35 @@ const props = defineProps<{
   images: string[]
 }>()
 
-// Dupliquer les images pour en avoir au moins 10 dans la piste
+// On double la liste pour avoir deux sets complets
 const duplicatedImages = computed(() => {
-  const duplicated: string[] = []
-  const minImages = 10 // Nombre minimum d'images dans la piste
-
-  // Si on n'a pas d'images, retourner un tableau vide
-  if (props.images.length === 0) return duplicated
-
-  // Dupliquer les images jusqu'à atteindre minImages
-  let i = 0
-  while (duplicated.length < minImages) {
-    const img = props.images[i % props.images.length]
-    if (img) {
-      duplicated.push(img)
-    }
-    i++
-  }
-
-  return duplicated
+  if (props.images.length === 0) return []
+  return [...props.images, ...props.images]
 })
 </script>
 
 <style scoped>
 .banner-track {
-  display: flex;
-  animation: infiniteSlide 30s linear infinite;
-  will-change: transform;
+  overflow: hidden;
 }
 
-@keyframes infiniteSlide {
-  0% {
+.banner-content {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  from {
     transform: translateX(0);
   }
-  100% {
-    /* On décale de la moitié de la largeur totale de la piste (car on a dupliqué les images) */
+  to {
     transform: translateX(-50%);
   }
 }
 
-.banner-track:hover {
+.banner-content:hover {
   animation-play-state: paused;
 }
 </style>

@@ -3,22 +3,22 @@ import LanguageCard from './LanguageCard.vue'
 
 const languages = [
   {
+    id: 2,
+    language: 'Arabe',
+    flag: '🇲🇦',
+    level: 'Langue maternelle'
+  },
+    {
     id: 1,
     language: 'Français',
     flag: '🇫🇷',
     level: 'Langue maternelle'
   },
   {
-    id: 2,
-    language: 'Arabe',
-    flag: '🇲🇦',
-    level: 'Langue maternelle'
-  },
-  {
     id: 3,
     language: 'Anglais',
     flag: '🇬🇧',
-    level: 'Avancé (C1)'
+    level: 'Intermédiaire (B2)'
   }
 ]
 </script>

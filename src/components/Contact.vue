@@ -6,32 +6,32 @@ const contacts = [
     id: 1,
     platform: 'Email',
     icon: '📧',
-    value: 'mahmoudi.othmane@gmail.com',
-    link: 'mailto:mahmoudi.othmane@gmail.com',
+    value: 'mahmoudi.othmane1@gmail.com',
+    link: 'https://mail.google.com/mail/u/0/#inbox?compose=new',
     bgImage: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800'
   },
   {
     id: 2,
     platform: 'LinkedIn',
     icon: '💼',
-    value: '@othmane-dev',
-    link: 'https://linkedin.com/in/othmane',
+    value: '@mahmoudi-othmane',
+    link: 'https://www.linkedin.com/in/mahmoudi-othmane',
     bgImage: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=800'
   },
   {
     id: 3,
     platform: 'GitHub',
     icon: '🐙',
-    value: '@othmane',
-    link: 'https://github.com/othmane',
+    value: '@othmanemahmoudi',
+    link: 'https://github.com/othmanemahmoudi',
     bgImage: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800'
   },
   {
     id: 4,
     platform: 'WhatsApp',
     icon: '💬',
-    value: '+33 6 12 34 56 78',
-    link: 'https://wa.me/33612345678',
+    value: '+33 6 99 86 14 96',
+    link: 'https://web.whatsapp.com',
     bgImage: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800'
   }
 ]

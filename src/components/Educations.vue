@@ -2,7 +2,7 @@
   <section id="formations" class="flex flex-col items-center justify-center pt-20 bg-white">
     <div class="flex flex-col items-center justify-center mb-12">
       <!-- Titre -->
-      <h2 class="text-4xl font-bold text-[#CFAF71] mb-16 animate-fadeIn">
+      <h2 class="text-4xl font-bold text-[#CFAF71] mb-16">
         Mon Parcours Académique
       </h2>
 

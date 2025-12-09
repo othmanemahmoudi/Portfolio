@@ -8,37 +8,40 @@ import h2 from '../assets/hobies/h2.jpeg'
 import h3 from '../assets/hobies/h3.jpeg'
 import h4 from '../assets/hobies/h4.jpeg'
 import h5 from '../assets/hobies/h5.jpeg'
+import h6 from '../assets/hobies/h6.jpeg'
+import h7 from '../assets/hobies/h7.jpeg'
+import h8 from '../assets/hobies/h8.jpeg'
 
 const hobies = [
-  {
-    id: 1,
-    name: 'Musique',
-    icon: '🎵',
-    bgImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800'
-  },
   {
     id: 2,
     name: 'Voyage',
     icon: '✈️',
-    bgImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800'
+    bgImage: 'https://images.unsplash.com/photo-1504150558240-0b4fd8946624?w=800'
   },
   {
     id: 3,
     name: 'Lecture',
     icon: '📚',
-    bgImage: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800'
+    bgImage: 'https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?q=800'
   },
   {
     id: 4,
-    name: 'Sport',
-    icon: '🏋️‍♂️',
-    bgImage: 'https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?w=800'
+    name: 'Sports collectifs',
+    icon: '⚽',
+    bgImage: 'https://images.unsplash.com/photo-1546608235-3310a2494cdf?w=800'
+  },
+    {
+    id: 6,
+    name: 'Sports individuels',
+    icon: '🏋️',
+    bgImage: 'https://images.unsplash.com/photo-1565992441121-4367c2967103?w=800'
   },
   {
     id: 5,
-    name: 'Cinéma',
-    icon: '🎬',
-    bgImage: 'https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=800'
+    name: 'Coding Game',
+    icon: '🎮',
+    bgImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800'
   }
 ]
 
@@ -48,7 +51,10 @@ const hobiesImages = [
   h2,
   h1,
   h3,
-  h5
+  h5,
+  h6,
+  h7,
+  h8
 ]
 </script>
 
