@@ -12,7 +12,7 @@ defineProps({
 <template>
   <div class="w-full h-full">
     <div
-      class="h-[300px] shadow-lg relative bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 backdrop-blur-xl rounded-2xl p-8 border border-[#CFAF71]/40 hover:scale-[1.02] transition-transform duration-300"
+      class="p-8 h-full w-full flex flex-col justify-between shadow-lg relative bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 backdrop-blur-xl rounded-2xl border border-[#CFAF71]/40 hover:scale-[1.02] transition-transform duration-300"
     >
       <!-- Coins décoratifs -->
       <div class="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-[#CFAF71] rounded-tl-2xl"></div>

@@ -38,7 +38,7 @@ import javaIcon from '../assets/icons/Java.svg'
 import pytestIcon from '../assets/icons/Pytest.svg'
 import saasIcon from '../assets/icons/Saas.svg'
 // Tu continues à importer les autres SVG dont tu as besoin…
-
+ 
 const skillCategories = [
   {
     title: 'Programmation',
@@ -46,9 +46,11 @@ const skillCategories = [
       { id: 1, name: 'Python', icon: pythonIcon, category: 'Langage', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800' },
       { id: 7, name: 'Java', icon: javaIcon, category: 'Langage', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800' },
       { id: 2, name: 'JavaScript', icon: javascriptIcon, category: 'Langage', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800' },
-      { id: 5, name: 'C', icon: cIcon, category: 'Langage', percentage: 75, bgImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800' },{ id: 4, name: 'SQL', icon: sqlIcon, category: 'Langage', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800' },      { id: 6, name: 'GraphQL', icon: graphqlIcon, category: 'Langage', percentage: 80, bgImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800' },
-      { id: 8, name: 'HTML', icon: htmlIcon, category: 'Langage', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800' },
-      { id: 9, name: 'CSS', icon: cssIcon, category: 'Langage', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800' },
+      { id: 5, name: 'C', icon: cIcon, category: 'Langage', percentage: 75, bgImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800' },
+      { id: 4, name: 'SQL', icon: sqlIcon, category: 'Langage', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800' },      
+      { id: 6, name: 'GraphQL', icon: graphqlIcon, category: 'Langage', percentage: 80, bgImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800' },
+      { id: 8, name: 'HTML5', icon: htmlIcon, category: 'Langage', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800' },
+      { id: 9, name: 'CSS3', icon: cssIcon, category: 'Langage', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800' },
       { id: 3, name: 'TypeScript', icon: typescriptIcon, category: 'Langage', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800' },
     ]
   },
@@ -67,13 +69,13 @@ const skillCategories = [
     title: 'Framework / API / CMS',
     skills: [
       { id: 13, name: 'Django', icon: djangoIcon, category: 'Backend', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800' },
-      { id: 14, name: 'Flask', icon: flaskIcon, category: 'Backend', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800' },
+      { id: 14, name: 'Flask python', icon: flaskIcon, category: 'Backend', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800' },
       { id: 15, name: 'Vue.js', icon: vueIcon, category: 'Frontend', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800' },
       { id: 21, name: 'VueUse', icon: vueuseIcon, category: 'Frontend', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800' },
 
       // { id: 16, name: 'React', icon: vueIcon, category: 'Frontend', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800' },
       // { id: 17, name: 'Angular', icon: vueIcon, category: 'Frontend', percentage: 80, bgImage: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800' },
-      { id: 18, name: 'Tailwind', icon: tailwindIcon, category: 'Frontend', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800' },
+      { id: 18, name: 'TailwindCSS', icon: tailwindIcon, category: 'Frontend', percentage: 95, bgImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800' },
       { id: 19, name: 'Pinia', icon: piniaIcon, category: 'Frontend', percentage: 90, bgImage: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800' },
       { id: 20, name: 'Storybook', icon: storyBookIcon, category: 'Frontend', percentage: 85, bgImage: 'https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=800' },
     ]
@@ -100,11 +102,11 @@ const skillCategories = [
   title: 'Outils / Logiciels',
   skills: [
     { id: 30, name: 'Git', icon: gitIcon, category: 'Outils', percentage: 95, bgImage: '...' },
-    { id: 31, name: 'npm', icon: npmIcon, category: 'Outils', percentage: 85, bgImage: '...' },
+    { id: 31, name: 'Node Package', icon: npmIcon, category: 'Outils', percentage: 85, bgImage: '...' },
     { id: 32, name: 'Figma', icon: figmaIcon, category: 'Logiciels', percentage: 85, bgImage: '...' },
     { id: 33, name: 'Jira Atlassian', icon: jiraIcon, category: 'Outils', percentage: 85, bgImage: '...' },
     { id: 34, name: 'Pycharm', icon: pycharmIcon, category: 'Logiciels', percentage: 85, bgImage: '...' },
-    { id: 35, name: 'VScode', icon: vscodeIcon, category: 'Logiciels', percentage: 85, bgImage: '...' }
+    { id: 35, name: 'visual studio code', icon: vscodeIcon, category: 'Logiciels', percentage: 85, bgImage: '...' }
 
   ]
 }

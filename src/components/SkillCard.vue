@@ -31,14 +31,14 @@ defineProps({
     </div>
     
     <!-- Contenu -->
-    <div class="relative h-full flex flex-col items-center justify-center p-3 backdrop-blur-sm">
+    <div class="relative h-auto flex flex-col items-center justify-center p-3 backdrop-blur-sm">
       <!-- Icône SVG locale -->
-      <div class="mb-2 transform group-hover:scale-110 transition-all duration-300">
+      <div class="mb-2 h-auto transform group-hover:scale-110 transition-all duration-300">
         <img :src="icon" alt="" :class="iconSize" />
       </div>
       
       <!-- Nom -->
-      <h3 class="text-sm font-bold text-[#2A2A2A] mb-1 group-hover:text-[#CFAF71] transition-colors duration-300 text-center line-clamp-1">
+      <h3 class="text-sm font-bold h-auto text-[#2A2A2A] mb-1 group-hover:text-[#CFAF71] transition-colors duration-300 text-center line-clamp-1">
         {{ name }}
       </h3>
     </div>

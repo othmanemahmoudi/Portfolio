@@ -46,6 +46,7 @@ const contacts = ref<Contact[]>([
 ])
 
 const activeContact = ref<Contact | null>(null)
+
 </script>
 
 <template>
@@ -54,16 +55,16 @@ const activeContact = ref<Contact | null>(null)
 
     <!-- Ligne entière -->
     <div
-      class="w-full max-w-5xl h-56 rounded-full overflow-hidden shadow-lg relative flex items-center justify-center transition-all duration-1000 ease-in-out"
+      class="w-full max-w-3xl h-40 rounded-full overflow-hidden shadow-lg relative flex items-center justify-center transition-all duration-1000 ease-in-out"
       :style="activeContact ? { backgroundImage: `url(${activeContact.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' } : { backgroundColor: '#fff' }"
       @mouseleave="activeContact = null"
     >
       <!-- État initial : 4 ronds -->
-      <div v-if="!activeContact" class="flex w-full h-full justify-around items-center transition-opacity duration-700 ease-in-out opacity-100">
+      <div v-if="!activeContact" class=" gap-2 flex w- h-full justify-around items-center transition-opacity duration-700 ease-in-out opacity-100">
         <div
           v-for="contact in contacts"
           :key="contact.id"
-          class="w-24 h-24 rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-500"
+          class="w-16 h-16 rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-500"
           :style="{ backgroundImage: `url(${contact.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }"
           @mouseenter="activeContact = contact"
         >

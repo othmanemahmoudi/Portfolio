@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div 
-    class="relative group w-full sm:w-[48%] lg:w-[30%] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+    class="mx-5 relative group w-full sm:w-[48%] lg:w-[30%] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
   >
 
     
@@ -27,7 +27,7 @@ defineProps({
     <div class="absolute inset-0 border-2 border-[#CFAF71]/40 rounded-2xl group-hover:border-[#CFAF71]/80 transition-all duration-500"></div>
     
     <!-- Contenu -->
-    <div class="relative h-full flex flex-col items-center justify-center p-6 backdrop-blur-sm">
+    <div class="p-6 h-full w-full flex flex-col justify-between relative items-center justify-center p-6 backdrop-blur-sm">
       <!-- Drapeau -->
       <div class="text-8xl mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
         {{ flag }}

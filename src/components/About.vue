@@ -50,7 +50,7 @@ onMounted(() => {
 <template>
   <section id="about" class=" flex flex-col items-center justify-center py-20">
     <h2 class="text-4xl font-bold text-[#CFAF71] mb-12">Profile</h2>
-      <div class="terminal rounded-lg font-mono  w-[65%] mx-auto shadow-2xl"> 
+      <div class="terminal rounded-lg font-mono  w-[85%] mx-auto shadow-2xl"> 
     <!-- Header du terminal -->
     <div class="terminal-header bg-[#2A2A2A] text-white p-3 rounded-t-lg flex items-center">
       <span class="text-red-500 text-4xl leading-[0px] align-middle -mt-2">•</span>
@@ -100,7 +100,5 @@ onMounted(() => {
   }
 }
 
-.animate-pulse {
-  animation: pulse 1s ease-in-out infinite;
-}
+
 </style>
