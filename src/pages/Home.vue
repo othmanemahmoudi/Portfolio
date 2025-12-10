@@ -9,7 +9,7 @@ import SuperOthmaneLoader from '../components/SuperOthmaneLoader.vue'
   <div class="min-h-screen flex flex-col">
     <SuperOthmaneLoader />
     <Header />
-    <main class="flex-1 pt-15">
+    <main class="flex-1">
       <DefaultLayout />
     </main>
     <Footer />

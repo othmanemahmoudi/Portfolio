@@ -10,7 +10,7 @@ const toggleMenu = () => {
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId)
   if (element) {
-    const headerHeight = 80 // Hauteur approximative du header
+    const headerHeight = 60 // Hauteur approximative du header
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
     const offsetPosition = elementPosition - headerHeight
 
@@ -24,7 +24,7 @@ const scrollToSection = (sectionId: string) => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-sm bg-black">
+  <header class=" backdrop-blur-md shadow-sm bg-black">
     <nav class="container mx-auto px-3 py-3 ">
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -213,6 +213,7 @@ const scrollToSection = (sectionId: string) => {
 .mobile-nav {
   display: none;
   align-items: center;
+  gap: 2rem
 }
 
 @media (max-width: 1299px) { 
