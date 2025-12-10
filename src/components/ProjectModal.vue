@@ -43,8 +43,8 @@
             </svg>
             Contexte du projet
           </h3>
-          <p class="text-[#2A2A2A]/80 text-base leading-relaxed">
-            {{ description }}
+          <p class="text-[#2A2A2A]/80 text-base leading-relaxed whitespace-pre-line">
+            {{ details }}
           </p>
         </div>
 
@@ -149,6 +149,7 @@
 defineProps({
   title: String,
   description: String,
+  details: String,
   status: String,
   date: String,
   company: String,
@@ -176,27 +177,5 @@ defineProps({
   animation: fadeInModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Scrollbar personnalisée */
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #CFAF71 transparent;
-}
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #CFAF71;
-  border-radius: 3px;
-  transition: background 0.2s;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #b8955a;
-}
 </style>

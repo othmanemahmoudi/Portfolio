@@ -4,16 +4,17 @@ import ProjectModal from './ProjectModal.vue'
 
 // Props
 const props = defineProps({
-  title: { type: String, default: "Mon projet génial" },
-  description: { type: String, default: "Voici une description rapide du projet." },
-  status: { type: String, default: "En cours" },
-  date: { type: String, default: "Décembre 2025" },
-  company: { type: String, default: "" },
+  title: { type: String, default: "Title" },
+  description: { type: String, default: "Description" },
+  details: { type: String, default: "Details" },
+  status: { type: String, default: "Status" },
+  date: { type: String, default: "Date" },
+  company: { type: String, default: "Company" },
   missions: { type: Array<string>, default: () => [] },
   results: { type: Array<string>, default: () => [] },
   technologies: { type: Array<string>, default: () => [] },
-  team: { type: String, default: "" },
-  link: { type: String, default: "" }
+  team: { type: String, default: "Team" },
+  link: { type: String, default: "Link" }
 })
 
 const isModalOpen = ref(false)
@@ -43,6 +44,7 @@ const openModal = () => { isModalOpen.value = true }
     v-if="isModalOpen"
     :title="props.title"
     :description="props.description"
+    :details="props.details"
     :status="props.status"
     :date="props.date"
     :company="props.company"
