@@ -25,7 +25,7 @@ const scrollToSection = (sectionId: string) => {
 
 <template>
   <header class=" backdrop-blur-md shadow-sm bg-black">
-    <nav class="container mx-auto px-3 py-3 ">
+    <nav class="container mx-auto px-3 py-3 h-[100%] ">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
@@ -112,7 +112,7 @@ const scrollToSection = (sectionId: string) => {
         <!-- Mobile Menu Button -->
         <button 
           @click="toggleMenu" 
-          class="mobile-nav p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="mobile-nav p-2 rounded-md text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-label="Toggle menu"
         >
           <svg 
@@ -139,58 +139,73 @@ const scrollToSection = (sectionId: string) => {
       <!-- Mobile Navigation -->
       <div 
         v-show="isMenuOpen" 
-        class="md:hidden mt-4 pb-4 border-t border-gray-200"
+        class="md:hidden h-[100%] mt-2 pb-2 border-t border-gray-200"
       >
-        <div class="flex flex-col space-y-3 pt-4">
+        <div class="flex flex-col space-y-3 pt-3">
           <a 
             href="#hero" 
             @click.prevent="scrollToSection('hero')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
             Accueil
           </a>
           <a 
             href="#about" 
             @click.prevent="scrollToSection('about')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
             À propos
           </a>
           <a 
             href="#experience" 
             @click.prevent="scrollToSection('experience')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
             Expérience
           </a>
-          <a 
-            href="#languages" 
-            @click.prevent="scrollToSection('languages')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+                              <a 
+            href="#formations" 
+            @click.prevent="scrollToSection('formations')" 
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium py-2"
           >
-            Langages
+            Formations
           </a>
-          <a 
+                              <a 
+            href="#certificats" 
+            @click.prevent="scrollToSection('certificats')" 
+            class="text-white hover:text-[#CFAF71] transition-colors font-medium py-2"
+          >
+            Certifications
+          </a>
+                    <a 
             href="#skills" 
             @click.prevent="scrollToSection('skills')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
             Compétences
           </a>
           <a 
-            href="#contact" 
-            @click.prevent="scrollToSection('contact')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            href="#languages" 
+            @click.prevent="scrollToSection('languages')" 
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
-            Contact
+            Langages
           </a>
-          <a 
+                    <a 
             href="#hobies" 
             @click.prevent="scrollToSection('hobies')" 
-            class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
           >
             Loisirs
           </a>
+          <a 
+            href="#contact" 
+            @click.prevent="scrollToSection('contact')" 
+            class="text-white hover:text-blue-600 transition-colors font-medium py-2"
+          >
+            Contact
+          </a>
+
         </div>
       </div>
     </nav>

@@ -20,8 +20,8 @@ const scrollToSection = (sectionId: string) => {
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Contenu texte -->
         <div class="text-center lg:text-left space-y-6 animate-fade-in">
-          <div class="inline-block">
-            <span class="text-sm font-semibold text-[#CFAF71] bg-[#2A2A2A] px-4 py-2 rounded-full">
+          <div class="inline-block mt-10">
+            <span class="text-sm font-semibold text-[#CFAF71] bg-[#2A2A2A] px-6 py-2 rounded-full">
               👋 Bonjour, je suis
             </span>
           </div>
