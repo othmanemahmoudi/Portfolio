@@ -45,7 +45,7 @@ const contacts = ref<Contact[]>([
   },
 ])
 
-const activeContact = ref(null)
+const activeContact = ref<Contact | null>(null)
 </script>
 
 <template>
