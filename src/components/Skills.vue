@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import SkillCard from './SkillCard.vue'
-import SkillsSphere from '../components/SkillsSphere.vue'
 
 // 👉 Import des SVG depuis assets/icons
 import vueIcon from '../assets/icons/vue.svg'   

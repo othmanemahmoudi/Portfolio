@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import SwitchTheme from '../components/SwitchTheme.vue'
 
 const isMenuOpen = ref(false)
 
