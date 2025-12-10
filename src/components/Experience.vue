@@ -98,11 +98,11 @@ Le projet impliquait l’ingénierie logicielle, l’optimisation algorithmique 
 </script>
 
 <template>
-  <section id="experience" class="min-h-screen flex flex-col items-center justify-center py-12 sm:py-20 px-4 bg-white dark:bg-[#0A0A0A] transition-colors">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#CFAF71] mb-2 sm:mb-4 text-center">Experiences professionnelles</h2>
-    <p class="text-sm sm:text-base md:text-lg text-[#2A2A2A] dark:text-gray-400 mb-6 sm:mb-8 text-center">Cliquez sur les cartes pour plus de détails</p>
+  <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4">
+    <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Experiences professionnelles</h2>
+    <p class="text-lg text-[#2A2A2A]/70 mb-8">veuillez cliquer sur les cartes pour plus de détails</p>
 
-    <div class="flex flex-col items-center justify-center gap-4 sm:gap-6 w-full">
+    <div class="flex flex-col items-center justify-center gap-6">
       <ProjectCard
         v-for="project in projects"
         :key="project.id"

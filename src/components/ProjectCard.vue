@@ -23,18 +23,18 @@ const openModal = () => { isModalOpen.value = true }
 
 <template>
   <div
-    class="w-full sm:w-[80%] lg:w-[70%] bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 dark:from-[#CFAF71]/10 dark:via-[#8B6937]/5 dark:to-[#2A2A2A]/20 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-slideUp border border-[#CFAF71]/40 dark:border-[#CFAF71]/20"
+    class="w-full sm:w-[80%]  bg-gradient-to-br from-[#CFAF71]/20 via-[#FFECC2]/20 to-[#8B6937]/20 rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-slideUp border border-[#CFAF71]/40"
     @click="openModal"
   >
-    <div class="p-4 sm:p-6 h-full w-full flex flex-col justify-between">
+    <div class="p-6 h-full w-full flex flex-col justify-between">
       <div>
-        <h3 class="text-lg sm:text-xl font-bold mb-2 text-[#2A2A2A] dark:text-white line-clamp-2">{{ title }}</h3>
-        <p class="text-gray-700 dark:text-gray-400 mb-4 line-clamp-3 text-sm sm:text-base">{{ description }}</p>
+        <h3 class="text-xl font-bold mb-2 text-[#2A2A2A]">{{ title }}</h3>
+        <p class="text-gray-700 mb-4 line-clamp-3">{{ description }}</p>
       </div>
 
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 text-xs sm:text-sm text-[#2A2A2A]/80 dark:text-gray-400 mt-auto">
-        <span class="px-3 py-1 bg-[#CFAF71]/20 dark:bg-[#CFAF71]/10 rounded-full truncate">{{ company }}</span>
-        <span class="flex-shrink-0">{{ date }}</span>
+      <div class="flex justify-between items-center text-sm text-[#2A2A2A]/80 mt-auto">
+        <span class="px-3 py-1 bg-[#CFAF71]/20 rounded-full">{{ company }}</span>
+        <span>{{ date }}</span>
       </div>
     </div>
   </div>
