@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const contacts = [
+interface Contact {
+  id: number
+  platform: string
+  icon: string
+  value: string
+  link: string
+  bgImage?: string
+}
+
+const contacts = ref<Contact[]>([
   {
     id: 1,
     platform: 'Email',
@@ -33,8 +42,8 @@ const contacts = [
     value: '+33 6 99 86 14 96',
     link: 'https://web.whatsapp.com',
     bgImage: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800'
-  }
-]
+  },
+])
 
 const activeContact = ref(null)
 </script>
