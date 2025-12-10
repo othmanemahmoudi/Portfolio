@@ -35,8 +35,8 @@ const scrollToSection = (sectionId: string) => {
         </div>
 
         <div class="text-white hover:text-[#CFAF71] transition-colors font-medium">
-          <a href="../public/CV.pdf" download="CV_Othmane_Mahmoudi.pdf">
-            CV.pdf
+          <a href="/CV.pdf" download="CV_Othmane_Mahmoudi.pdf">
+            Télécharger mon CV
           </a>
         </div>
 
