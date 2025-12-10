@@ -34,7 +34,13 @@ const scrollToSection = (sectionId: string) => {
           </a>
         </div>
 
-        <SwitchTheme />
+        <div class="text-white hover:text-[#CFAF71] transition-colors font-medium">
+          <a href="../public/CV.pdf" download="CV_OTHMANE_MAHMOUDI">
+            CV.pdf
+          </a>
+        </div>
+
+
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
