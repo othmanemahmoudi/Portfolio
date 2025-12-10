@@ -24,7 +24,7 @@ const scrollToSection = (sectionId: string) => {
 </script>
 
 <template>
-  <header class=" backdrop-blur-md shadow-sm bg-black">
+  <header class=" backdrop-blur-md shadow-sm bg-black w-full  ">
     <nav class="container mx-auto px-3 py-3 h-[100%] ">
       <div class="flex items-center justify-between">
         <!-- Logo -->

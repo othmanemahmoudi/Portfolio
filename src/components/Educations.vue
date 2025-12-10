@@ -1,8 +1,8 @@
 <template>
-  <section id="formations" class="flex flex-col items-center justify-center pt-20 bg-white">
+  <section id="formations" class="flex flex-col items-center justify-center bg-white px-4 pt-20">
     <div class="flex flex-col items-center justify-center mb-12">
       <!-- Titre -->
-      <h2 class="text-4xl font-bold text-[#CFAF71] mb-16">
+      <h2 class="text-4xl font-bold text-[#CFAF71]">
         Mon Parcours Académique
       </h2>
 
@@ -45,7 +45,7 @@
 .stepper-box {
   background-color: white;
   padding: 32px;
-  width: 500px;
+  width: 100%;
 }
 
 .stepper-status {
