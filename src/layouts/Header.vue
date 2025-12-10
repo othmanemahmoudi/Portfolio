@@ -25,7 +25,7 @@ const scrollToSection = (sectionId: string) => {
 
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-sm bg-black">
-    <nav class="container mx-auto px-4 py-4 ">
+    <nav class="container mx-auto px-3 py-3 ">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center">
@@ -34,16 +34,15 @@ const scrollToSection = (sectionId: string) => {
           </a>
         </div>
 
+        <!-- Cv -->
         <div class="text-white hover:text-[#CFAF71] transition-colors font-medium">
           <a href="/CV.pdf" download="CV_Othmane_Mahmoudi.pdf">
             Télécharger mon CV
           </a>
         </div>
 
-
-
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="desktop-nav">
           <a 
             href="#hero" 
             @click.prevent="scrollToSection('hero')" 
@@ -113,7 +112,7 @@ const scrollToSection = (sectionId: string) => {
         <!-- Mobile Menu Button -->
         <button 
           @click="toggleMenu" 
-          class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="mobile-nav p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-label="Toggle menu"
         >
           <svg 
@@ -199,6 +198,27 @@ const scrollToSection = (sectionId: string) => {
 </template>
 
 <style scoped>
-/* Styles supplémentaires si nécessaire */
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 2rem; /* équivalent à space-x-8, mais attention: space-x-8 ajoute un margin-left à chaque enfant sauf le premier, donc on peut utiliser gap si on passe à une flexbox avec gap */
+}
+
+@media (min-width: 1300px) { 
+  .desktop-nav {
+    display: flex;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  align-items: center;
+}
+
+@media (max-width: 1299px) { 
+  .mobile-nav {
+    display: flex;
+  }
+}
 </style>
 
