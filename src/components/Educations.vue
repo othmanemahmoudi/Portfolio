@@ -22,7 +22,7 @@
           <div class="stepper-circle animate-pulse">✓</div>
           <div class="stepper-line animate-line"></div>
           <div class="stepper-content animate-step delay-200">
-            <div class="stepper-title">Diplôme d’ingénieur d’état – EMS</div>
+            <div class="stepper-title">Diplôme d’ingénieur d’état – École Marocaine des Sciences de l'Ingénieur</div>
             <div class="stepper-status">Ingénierie des Automatismes et Informatique Industrielle</div>
             <div class="stepper-time">2018 - 2020</div>
           </div>

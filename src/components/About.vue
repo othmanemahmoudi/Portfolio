@@ -25,7 +25,7 @@ Une volonté d’amélioration continue et d’apprentissage permanent.`
 
 onMounted(() => {
   let index = 0
-  const typingSpeed = 50 // millisecondes par caractère
+  const typingSpeed = 5 // millisecondes par caractère
   
   const typeText = () => {
     if (index < fullText.length) {
@@ -100,5 +100,7 @@ onMounted(() => {
   }
 }
 
-
+.animate-pulse {
+  animation: pulse 1s ease-in-out infinite;
+}
 </style>
