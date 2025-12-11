@@ -118,7 +118,7 @@ const scrollToSection = (sectionId: string) => {
             @click.prevent="scrollToSection('languages')" 
             class="text-white hover:text-[#CFAF71] transition-colors font-medium"
           >
-            Langages
+            Langues
           </a>
 
                     <a 

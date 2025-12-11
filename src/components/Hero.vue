@@ -58,7 +58,7 @@ const scrollToSection = (sectionId: string) => {
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Python</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Java</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">FastAPI</span>
-              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Vue</span>
+              <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Vuejs</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Linux</span>
               <span class="px-4 py-2 bg-[#2A2A2A] text-white rounded-lg text-sm font-medium">Docker</span>
               <a href="#skills" 
@@ -83,7 +83,7 @@ const scrollToSection = (sectionId: string) => {
               <div class="absolute inset-2 rounded-full overflow-hidden border-4 border-[#CFAF71] shadow-2xl">
 
                 <img 
-                  src="../assets/othmane.png" 
+                  src="../assets/othmane.jpg" 
                   alt="Othmane - Développeur Python Full Stack"
                   class="w-full h-full object-cover"
                 />
