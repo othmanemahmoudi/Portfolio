@@ -41,9 +41,7 @@ onMounted(() => {
   setTimeout(typeText, 500)
   
   // Animation du curseur clignotant
-  setInterval(() => {
-    showCursor.value = !showCursor.value
-  }, 500)
+
 })
 </script>
 

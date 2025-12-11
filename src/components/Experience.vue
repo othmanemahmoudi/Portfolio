@@ -99,7 +99,7 @@ Le projet impliquait l’ingénierie logicielle, l’optimisation algorithmique 
 
 <template>
   <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4">
-    <h2 class="text-4xl font-bold text-[#CFAF71] mb-4">Experiences professionnelles</h2>
+    <h2 class="mobile-text text-4xl font-bold text-[#CFAF71] mb-4">Experiences professionnelles</h2>
     <p class="text-lg text-[#2A2A2A]/70 mb-8">veuillez cliquer sur les cartes pour plus de détails</p>
 
     <div class="flex flex-col items-center justify-center gap-6">
@@ -121,3 +121,11 @@ Le projet impliquait l’ingénierie logicielle, l’optimisation algorithmique 
     </div>
   </section>
 </template>
+
+<style scoped>
+    @media (max-width: 590px) {
+  .mobile-text {
+    font-size: 24px;
+  }
+}
+</style>

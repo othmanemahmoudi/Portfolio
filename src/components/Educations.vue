@@ -2,7 +2,7 @@
   <section id="formations" class="flex flex-col items-center justify-center bg-white px-4 pt-20">
     <div class="flex flex-col items-center justify-center mb-12">
       <!-- Titre -->
-      <h2 class="text-4xl font-bold text-[#CFAF71]">
+      <h2 class="mobile-text text-4xl font-bold text-[#CFAF71]">
         Mon Parcours Académique
       </h2>
 
@@ -42,6 +42,25 @@
 </template>
 
 <style scoped>
+  @media (max-width: 590px) {
+  .stepper-step {
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .stepper-circle {
+    margin: 0 0 12px 0;
+    
+  }
+
+  .stepper-line {
+    display: none;
+  }
+
+    .mobile-text {
+    font-size: 27px;
+  }
+}
 .stepper-box {
   background-color: white;
   padding: 32px;
