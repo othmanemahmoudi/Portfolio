@@ -60,23 +60,23 @@ onMounted(() => {
     <!-- Corps du terminal -->
     <div class="bg-[#1e1e1e] text-gray-100 p-6 rounded-b-lg min-h-[300px]">
       <div class="mb-4">
-        <span class="text-[#CFAF71]">othmane@portfolio</span>
-        <span class="text-gray-400">:</span>
-        <span class="text-blue-400">~</span>
-        <span class="text-gray-400">$</span>
-        <span class="text-green-400 ml-2">cat profil.txt</span>
+        <span class="mobile-text text-[#CFAF71]">othmane@portfolio</span>
+        <span class="mobile-text text-gray-400">:</span>
+        <span class="mobile-text text-blue-400">~</span>
+        <span class="mobile-text text-gray-400">$</span>
+        <span class="mobile-text text-green-400 ml-2">cat profil.txt</span>
       </div>
       
-      <div class="text-gray-300 leading-relaxed whitespace-pre-wrap">
+      <div class="mobile-text text-gray-300 leading-relaxed whitespace-pre-wrap">
         {{ terminalText }}<span v-if="showCursor" class="text-[#CFAF71] animate-pulse">█</span>
       </div>
       
       <div v-if="isTypingComplete" class="mt-6 flex items-center">
-        <span class="text-[#CFAF71]">othmane@portfolio</span>
-        <span class="text-gray-400">:</span>
-        <span class="text-blue-400">~</span>
-        <span class="text-gray-400">$</span>
-        <span class="text-[#CFAF71] ml-2 animate-pulse">█</span>
+        <span class="mobile-text text-[#CFAF71]">othmane@portfolio</span>
+        <span class="mobile-text text-gray-400">:</span>
+        <span class="mobile-text text-blue-400">~</span>
+        <span class="mobile-text text-gray-400">$</span>
+        <span class="mobile-text text-[#CFAF71] ml-2 animate-pulse">█</span>
       </div>
     </div>
   </div>
@@ -85,6 +85,12 @@ onMounted(() => {
 </template>
 
 <style scoped>
+    @media (max-width: 590px) {
+  .mobile-text {
+    font-size: 12px;
+  }
+}
+
 .terminal {
   border: 1px solid #333;
 }
