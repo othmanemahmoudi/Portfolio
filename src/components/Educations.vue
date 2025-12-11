@@ -58,7 +58,7 @@
   }
 
     .mobile-text {
-    font-size: 26px;
+    font-size: 23px;
   }
 }
 .stepper-box {
