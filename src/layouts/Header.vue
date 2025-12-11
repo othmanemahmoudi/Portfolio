@@ -1,6 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const isDownloading = ref(false)
+
+const showMessage = () => {
+  isDownloading.value = true
+
+  setTimeout(() => {
+    isDownloading.value = false
+  }, 2000)
+}
+
+
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
@@ -34,12 +45,29 @@ const scrollToSection = (sectionId: string) => {
           </a>
         </div>
 
-        <!-- Cv -->
-        <div class="text-white hover:text-[#CFAF71] transition-colors font-medium">
-          <a href="/CV.pdf" download="CV_Othmane_Mahmoudi.pdf">
+        <div class="flex flex-col items-end mr-4">
+          
+          <!-- Message -->
+          <p 
+            v-if="isDownloading"
+            class="text-[#CFAF71] font-semibold text-sm transition-opacity duration-500"
+          >
+            En cours ...
+          </p>
+
+          <!-- Lien CV -->
+          <a 
+            v-else
+            href="/CV.pdf" 
+            download="CV_Othmane_Mahmoudi.pdf"
+            @click="showMessage()"
+            class="text-white hover:text-[#CFAF71] font-medium"
+          >
             Télécharger mon CV
           </a>
+
         </div>
+
 
         <!-- Desktop Navigation -->
         <div class="desktop-nav">
